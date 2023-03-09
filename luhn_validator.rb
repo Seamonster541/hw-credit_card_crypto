@@ -30,13 +30,13 @@ module LuhnValidator
   end
 
   # Doubles the number and if it is greater than 9, -9.
-  def double_even(n, i)
-    double_n = n * 2
+  def double_even(num, index)
+    double_n = num * 2
 
-    if i.even?
+    if index.even?
       double_n > 9 ? double_n - 9 : double_n
     else
-      n
+      num
     end
   end
 end
