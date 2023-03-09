@@ -13,7 +13,7 @@ module LuhnValidator
     check_digit = nums_a.pop
 
     # reverses the array since the payload starts from the most right digit
-    payload = nums_a.reverse!
+    payload = nums_a.reverse
 
     # create a new payload where each even position is doubled
     new_payload = payload.map.with_index { |n, i| double_even(n, i) }
